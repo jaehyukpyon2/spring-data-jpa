@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 @Getter @Setter
 public class BaseEntity {
-    @CreatedDate
+    @CreatedDate // jpa persist 되기 전에 호출된다.
     @Column(updatable = false)
     private LocalDateTime createdDate;
     // entity가 persist 되고 난 이후, createdDAte가 자동으로 할당되는데, 할당되고 난 이후 set을 호출하여 강제로 새로운 시간을 넣어도
