@@ -232,4 +232,12 @@ class MemberRepositoryTest {
     public void callCustom() throws Exception {
         List<Member> result = memberRepository.findMemberCustom();
     }
+    
+    @Test
+    public void projections() throws Exception {
+        Member m1 = new Member("m1", 0, null);
+        Member m2 = new Member("m2", 0, null);
+
+
+    }
 }
